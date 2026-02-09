@@ -4,9 +4,11 @@
 class Solution {
 public:
     std::string longestCommonPrefix(const std::vector<std::string>& vector) {
-        if (vector.size() == 0) return "";
+        if (vector.empty()) return "";
+
         std::string first = vector[0];
         std::string common;
+
         bool add_str = true;
         bool break_loop = false;
         for (int i=0; i < first.length(); i++) {
