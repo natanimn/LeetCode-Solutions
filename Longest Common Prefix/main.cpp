@@ -29,6 +29,7 @@ public:
         return common;
     }
 };
+
 int main() {
     std::vector<std::string> vector = {std::string("abdh", 1000), std::string("cbd", 10)};
     Solution solution;
